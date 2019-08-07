@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter montana,$(TARGET_DEVICE)),)
+ifneq ($(filter perry,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -170,8 +170,8 @@ $(VENUS_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENUS_SYMLINKS)
 
-include device/motorola/montana/tftp.mk
-include device/motorola/montana/expat.mk
+include device/motorola/perry/tftp.mk
+include device/motorola/perry/expat.mk
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
