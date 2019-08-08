@@ -62,3 +62,7 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-perry.conf:system/vendor/etc/thermal-engine.conf
+    
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0-java
