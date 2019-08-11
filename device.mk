@@ -41,10 +41,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageActions
 
-# Power
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
