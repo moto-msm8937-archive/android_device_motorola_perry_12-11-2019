@@ -21,8 +21,8 @@ $(call inherit-product-if-exists, device/motorola/msm8937-common/msm8937.mk)
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_DEVICE := montana
-PRODUCT_NAME := omni_montana
+PRODUCT_DEVICE := perry
+PRODUCT_NAME := omni_perry
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := Moto G5S
+PRODUCT_MODEL := Moto E4
 PRODUCT_MANUFACTURER := Motorola

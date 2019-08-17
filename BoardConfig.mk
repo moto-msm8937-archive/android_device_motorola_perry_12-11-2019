@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/montana
+DEVICE_PATH := device/motorola/perry
 
 -include device/motorola/msm8937-common/BoardConfigCommon.mk
 
@@ -24,4 +24,4 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 
 # Kernel
-TARGET_KERNEL_CONFIG := montana_defconfig
+TARGET_KERNEL_CONFIG := perry_defconfig
