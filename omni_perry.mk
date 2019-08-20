@@ -26,3 +26,6 @@ PRODUCT_NAME := omni_perry
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := Moto E4
 PRODUCT_MANUFACTURER := Motorola
+
+PRODUCT_PACKAGES += \
+	android.hardware.weaver@1.0
