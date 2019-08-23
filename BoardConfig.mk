@@ -28,3 +28,5 @@ TARGET_KERNEL_CONFIG := perry_defconfig
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
+USE_RECOVERY_INSTALLER := true
+RECOVERY_INSTALLER_PATH := device/motorola/perry/installer
