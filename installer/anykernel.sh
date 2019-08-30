@@ -19,7 +19,7 @@ supported.patchlevels=
 '; } # end properties
 
 # shell variables
-block=recovery;
+block=/dev/block/bootdevice/by-name/recovery;
 is_slot_device=0;
 ramdisk_compression=auto;
 
