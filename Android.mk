@@ -17,9 +17,6 @@ ifneq ($(filter perry,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
-FIRMWARE_ADSP_IMAGES += \
-    adsp.b14
-
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 endif
