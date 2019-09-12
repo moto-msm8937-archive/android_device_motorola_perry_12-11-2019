@@ -82,3 +82,8 @@ on post-fs-data
 # service-ets
 on property:ro.hw.fps=false
     stop ets_hal
+
+on boot 
+    write /dev/cpuset/top-app/cpus 0-3
+    write /dev/cpuset/top-app/boost/cpus 0-3
+    write /dev/cpuset/foreground/cpus 0-3
