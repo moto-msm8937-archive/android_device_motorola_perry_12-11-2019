@@ -45,3 +45,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# Display
+TARGET_USES_GRALLOC1 := true
+TARGET_USES_HWC2 := true
+USE_OPENGL_RENDERER := true
