@@ -23,3 +23,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.sensors=perry
+
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.egl.hw=1 \
+    debug.sf.hw=1 \
+    ro.sf.lcd_density=320 \
+    debug.gralloc.enable_fb_ubwc=0
