@@ -40,6 +40,12 @@ on boot
     chmod 0664 "/sys/class/sensors/mxg3300_compass/poll_delay"
     chmod 0664 "/sys/class/sensors/mxg3300_compass/self_test"
 
+    write /dev/cpuset/top-app/cpus 0-3
+    write /dev/cpuset/top-app/boost/cpus 2-3
+    write /dev/cpuset/foreground/cpus 0-3
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-3
+
 # Perry uses qcom sensor service
 service sensors /system/vendor/bin/sensors.qcom
     class core
@@ -83,7 +89,3 @@ on post-fs-data
 on property:ro.hw.fps=false
     stop ets_hal
 
-on boot 
-    write /dev/cpuset/top-app/cpus 0-3
-    write /dev/cpuset/top-app/boost/cpus 0-3
-    write /dev/cpuset/foreground/cpus 0-3
