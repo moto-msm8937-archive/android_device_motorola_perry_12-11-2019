@@ -63,3 +63,9 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager@1.0-java
+    
+# Camera
+PRODUCT_PACKAGES += \
+    libshim_camera_hal \
+    libshims_camera \
+    camera.msm8953

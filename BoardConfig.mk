@@ -45,3 +45,10 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# Shim
+TARGET_LD_SHIM_LIBS := \
+     /system/vendor/bin/adspd|libshim_adsp.so \
+     /system/lib/libjustshoot.so|libshims_camera.so \
+     /system/lib/hw/camera.vendor.msm8953.so|libshim_camera_hal.so \
+     /system/lib/hw/camera.msm8953.so|libshim_camera_hal.so
